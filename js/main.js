@@ -2,7 +2,7 @@
 
 let arr = [2,17,13,6,22,31,45,66,100,-18];
 
-//     1. перебрати його циклом while
+// 1. перебрати його циклом while
 
 let itemWhile = 0;
 while (itemWhile < arr.length) {
@@ -10,33 +10,33 @@ while (itemWhile < arr.length) {
     itemWhile++;
 };
 
-//     2. перебрати його циклом for
+// 2. перебрати його циклом for
 
 for (let arrKey in arr) {
     console.log('itemFor = ', arr[arrKey]);
 };
 
-//     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// 3. перебрати циклом while та вивести  числа тільки з непарним індексом
 
 let itemWhileUnpaired = 0;
 while (itemWhileUnpaired < arr.length) {
     let i = arr[itemWhileUnpaired];
-    if (i % 3) {
+    if (i%2 === 1) {
         console.log('itemWhileUnpaired = ', i);
     }
     itemWhileUnpaired++;
 };
 
-//     4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
 for (let arrKey in arr) {
     let item = arr[arrKey];
-    if (item % 3) {
+    if (item % 2 === 1) {
         console.log('itemForUnpaired = ', item);
     };
 };
 
-//     5. перебрати циклом while та вивести  числа тільки парні  значення
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
 
 let itemWhilePaired = 0;
 while (itemWhilePaired < arr.length) {
@@ -47,7 +47,7 @@ while (itemWhilePaired < arr.length) {
     itemWhilePaired++;
 };
 
-//     6. перебрати циклом for та вивести  числа тільки парні  значення
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
 
 for (let arrKey in arr) {
     let item = arr[arrKey];
@@ -56,7 +56,7 @@ for (let arrKey in arr) {
     };
 };
 
-//     7. замінити кожне число кратне 3 на слово "okten"
+// 7. замінити кожне число кратне 3 на слово "okten"
 
 for (let arrKey in arr) {
     let item = arr[arrKey];
@@ -68,19 +68,19 @@ for (let arrKey in arr) {
     };
 };
 
-//     8. вивести масив в зворотньому порядку.
+// 8. вивести масив в зворотньому порядку.
 
 for (let arrKey = arr.length - 1; arrKey >= 0; arrKey--) {
     console.log('itemRevers1 = ', arr[arrKey]);
 };
 
-// let arrRevers = arr.reverse();
-// for (let arrKey in arrRevers) {
-//     console.log('itemRevers2 = ', arrRevers[arrKey]);
-// };
+let arrRevers = arr.reverse();
+for (let arrKey in arrRevers) {
+    console.log('itemRevers2 = ', arrRevers[arrKey]);
+};
 
 
-//     9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+// 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
 // 7.
 for (let arrKey = arr.length - 1; arrKey >= 0; arrKey--) {
